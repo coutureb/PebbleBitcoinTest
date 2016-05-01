@@ -1,5 +1,6 @@
 var UI = require('ui');
 var ajax = require('ajax');
+var Vibe = require('ui/vibe');
 
 // Create a Card with title and subtitle
 var card = new UI.Card({
@@ -25,8 +26,9 @@ ajax(
 
     // Show to user
   
-    var bitcoinInUS = "    $ " + data.last ;
+    var bitcoinInUS = "\n    $ " + data.last ;
     card.body(bitcoinInUS);
+    var Vibe = require('ui/vibe');
   },
   function(error) {
     // Failure!
