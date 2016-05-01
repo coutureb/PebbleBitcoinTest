@@ -1,19 +1,16 @@
 var UI = require('ui');
 var ajax = require('ajax');
 
-var myAPIKey = '';
-
 // Create a Card with title and subtitle
 var card = new UI.Card({
-  title:'',
-  subtitle:'Fetching...'
+  title:'       Bitcoin',
+  subtitle:'        in USD'
 });
 
 // Display the Card
 card.show();
 
 // Construct URL
-//var cityName = 'London';
 var URL = 'https://www.bitstamp.net/api/v2/ticker/btcusd/';
 
 // Make the request
@@ -24,23 +21,15 @@ ajax(
   },
   function(data) {
     // Success!
-    console.log("Successfully fetched weather data!");
-
-    // Extract data
-    //var location = data.name;
-    //var temperature = Math.round(data.main.temp - 273.15) + "C";
-
-    // Always upper-case first letter of description
-    //var description = data.weather[0].description;
-    //description = description.charAt(0).toUpperCase() + description.substring(1);
+    console.log("Successfully fetched bitcoin data!");
 
     // Show to user
-    //card.subtitle(location + ", " + temperature);
-    var bitcoinInUS = data.last;
+  
+    var bitcoinInUS = "    $ " + data.last ;
     card.body(bitcoinInUS);
   },
   function(error) {
     // Failure!
-    console.log('Failed fetching weather data: ' + error);
+    console.log('Failed fetching bitcoin data: ' + error);
   }
 );

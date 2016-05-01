@@ -4,7 +4,7 @@
         ""
     ],
     "companyName": "Pebble",
-    "longName": "Pebble.js Tutorial 1-2",
+    "longName": "Bitcoin in USD",
     "projectType": "pebblejs",
     "resources": {
         "media": [
@@ -32,12 +32,12 @@
         ]
     },
     "sdkVersion": "3",
-    "shortName": "P.js Tut 1-2",
+    "shortName": "Bitcoin in USD",
     "targetPlatforms": [
         "aplite",
         "basalt"
     ],
-    "uuid": "298dc20d-f722-4370-84fe-de4bf28446b6",
+    "uuid": "3577d82c-3fa2-4ff4-852b-3d4f88c6f702",
     "versionCode": 1,
     "versionLabel": "1.0",
     "watchapp": {
