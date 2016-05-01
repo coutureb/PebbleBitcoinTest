@@ -28,7 +28,7 @@ ajax(
   
     var bitcoinInUS = "\n    $ " + data.last ;
     card.body(bitcoinInUS);
-    var Vibe = require('ui/vibe');
+    Vibe.vibrate('short');
   },
   function(error) {
     // Failure!
